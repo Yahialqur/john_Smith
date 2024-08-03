@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>John Smith Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class = "full width">
+        <header>
+            <div class="header-content">
+                <div class="contact">
+                    <h1>
+                        John Smith
+                    </h1>
+                    <p>
+                        <i class="fas fa-envelope"></i>jSmith@gmail.com<br>
+                        <i class="fas fa-phone"></i>480 123 1234
+                    </p>
+                </div>
+                <nav class="navigation-bar">
+                    <ul>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#recommendations">Recommendations</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+        </header>
+        <main>
+            <div class="body-content">
+                <div class="profile-pic">
+                    <img src="/developer_pic.jpg"/>
+                </div>
+                <div class="profile-text">
+                    <h2>Hi, I'm John Smith</h2>
+                    <p>I am an aspiring full stack developer with around 1 year of personal experience. 
+                        I have worked on some projects which I have deployed on the IBM cloud. Furthermore, 
+                        I am always eager to learn and always looking to gain new skills</p>
+                </div>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <div class="skill-boxes">
+                    <div class="skill">
+                        <img src="/html_icon.png"/>
+                        <h4>HTML</h4>
+                        <p>Years of Experience: 1</p>
+                    </div>
+                    <div class="skill">
+                        <img src="/css_icon.png"/>
+                        <h4>CSS</h4>
+                        <p>Years of Experience: 1</p>
+                    </div>
+                    <div class="skill-js">
+                        <img src="/js_icon.webp"/>
+                        <h4>JavaScript</h4>
+                        <p>Years of Experience: 1</p>
+                    </div>
+                    <div class="skill-cpp">
+                        <img src="cpp_icon.png"/>
+                        <h4>C++</h4>
+                        <p>Years of Experience: 3</p>
+                    </div>
+                    <div class="skill-c">
+                        <img src="c_icon.png"/>
+                        <h4>C</h4>
+                        <p>Years of Experience: 3</p>
+                    </div>
+                    <div class="skill-python">
+                        <img src="python_icon.jpeg"/>
+                        <h4>Python</h4>
+                        <p>Years of Experience: 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h4>Effort Logger</h4>
+                    <p>Worked as part of a small team on a project to develop 
+                        a software prototype.In this project we were given a sample 
+                        customer who was looking for a software solution to help with
+                        project tracking and accounting.
+                        My team and I managed to develop a solution using the Java 
+                        programming language while practicing agile methodology.</p>
+                </div>
+            </div>
+            <div class="recommendations">
+                <h2>Recommendations</h2>
+                <div class="recos" id="all_recommendations">
+                    <div class="reco">
+                        <p>"John is a very quick learner and remained very professional 
+                            during our experience togther. He is a great programmer and
+                            is always improving. He worked very well with out team."
+                        </p>
+                    </div>
+                    <div class="reco">
+                        <p>"Working with John Smith has been a wonderful experience. He 
+                            is very knowledgable and even when he did not know an answer, 
+                            he would take the time to research it and become familiar. I would
+                            love to work with him on any future projects I may have."
+                        </p>
+                    </div>
+                    <div class="reco">
+                        <p>
+                            "I worked with John Smith on developing a web application for a local 
+                            company here. John was always on time and very professional. He communicated
+                            very well and made sure everything was straightforward. I would love to work
+                            with John again"
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="leave-rec">
+                <h2>Leave a Recommendation</h2>
+                <textarea id="new_recommendation" placeholder="Write your recommendation here..."></textarea>
+                <button type="submit" onclick="addRecommendation()">Submit</button>
+            </div>
+            <div class="iconbutton">
+                <a href="#home">
+                  <!--Add the code here for the logo to appear and the icon to be actionable-->
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </a>
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <p>Thank you for leaving a recommendation!</p>
+                    <button onclick="showPopup(false)">OK</button>
+                </div>
+            </div>
+        </main>
+    </div>
+  </body>
+</html>
